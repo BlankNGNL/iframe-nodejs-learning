@@ -13,7 +13,7 @@ logGreeting(greet);
 
 //function expression
 let greetMe = function () {
-    console.log('Hi Noella')
+    console.log('Hi ik ben MSN')
 }
 greetMe();
 
@@ -22,5 +22,6 @@ logGreeting(greetMe);
 
 // use a function expression on the fly, only use once
 logGreeting(function () {
-    console.log('Hoi Tjaban')
+    console.log('Hoi Yahoo')
 })
+
