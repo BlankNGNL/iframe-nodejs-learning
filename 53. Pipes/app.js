@@ -12,3 +12,4 @@ let gzip = zlib.createGzip();
 readable.pipe(writeable);
 
 readable.pipe(gzip).pipe(compressed);
+
