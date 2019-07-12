@@ -20,4 +20,4 @@ selenium-debug.log
 *.iml
 docker-compose.override.yml
 teardown.override.sh
-
+.env

@@ -1,13 +1,13 @@
-let express = require('express');
-let app = express();
+require('dotenv').config();
+const express = require('express');
+const app = express();
 const mongoose = require('mongoose');
 
-mongoose.connect('mongodb+srv://kek:lol@cluster0-g87w9.mongodb.net/test?retryWrites=true&w=majority',{ useNewUrlParser: true } ).catch(function (err){
+
+mongoose.connect(process.env.MONGO_URI,{ useNewUrlParser: true } ).catch(function (err){
     console.log(err);
     process.exit(1);
 });
-
-
 
 let Schema = mongoose.Schema;
 
