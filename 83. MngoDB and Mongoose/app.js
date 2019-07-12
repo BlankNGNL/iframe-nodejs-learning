@@ -9,13 +9,15 @@ mongoose.connect(process.env.MONGO_URI,{ useNewUrlParser: true } ).catch(functio
     process.exit(1);
 });
 
+
+
 let Schema = mongoose.Schema;
 
 let personSchema = new Schema({
     firstname: String,
     lastname: String,
     address: String
-});
+},{collection:'personinfo'});
 
 let Person = mongoose.model('Person', personSchema);
 
