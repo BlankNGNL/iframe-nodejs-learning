@@ -1,0 +1,23 @@
+<html ng-app="TestApp">
+    <head>
+        <title>
+            The Mean Stack
+        </title>
+
+        <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.7.8/angular.js"></script>
+
+    </head>
+    <body ng-controller="MainController as vm">
+    <ul>
+        <li ng-repeat="person in vm.people">
+            {{person.name}}
+        </li>
+    </ul>
+    <script>
+        let clientPeople = <%- JSON.stringify(serverPeople)%>;
+    </script>
+    <script src="/assets/js/app.js"></script>
+    </body>
+</html>
+
+
